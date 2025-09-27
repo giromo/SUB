@@ -6,7 +6,7 @@
 
 🚀 **WARP Endpoint Scanner** automatically tests Cloudflare WARP endpoints to find the fastest and most reliable IPv4 addresses for your VPN setup. Updated daily with fresh results!
 
-**Last updated**: 2025-09-26 04:57:14 IRST
+**Last updated**: 2025-09-27 04:54:12 IRST
 
 ## 📊 Top IPv4 Endpoints
 Below are the top 10 IPv4 endpoints ranked by lowest latency and packet loss.
@@ -14,16 +14,16 @@ Below are the top 10 IPv4 endpoints ranked by lowest latency and packet loss.
 
 | Rank | Endpoint | Loss Rate (%) | Avg. Latency (ms) |
 |------|----------|---------------|-------------------|
-| 1 | `162.159.192.6:500` | 0.00 | 11.83 |
-| 2 | `162.159.192.6:2408` | 0.00 | 12.42 |
-| 3 | `162.159.192.7:1701` | 0.00 | 12.57 |
-| 4 | `162.159.192.11:500` | 0.00 | 12.66 |
-| 5 | `162.159.192.14:1701` | 33.33 | 12.72 |
-| 6 | `162.159.192.9:2408` | 0.00 | 12.78 |
-| 7 | `162.159.192.13:500` | 0.00 | 12.82 |
-| 8 | `162.159.192.2:2408` | 0.00 | 13.20 |
-| 9 | `162.159.192.4:1701` | 0.00 | 13.32 |
-| 10 | `162.159.192.13:1701` | 33.33 | 13.42 |
+| 1 | `162.159.192.7:500` | 0.00 | 12.02 |
+| 2 | `162.159.192.3:1701` | 0.00 | 12.06 |
+| 3 | `162.159.192.7:1701` | 0.00 | 12.40 |
+| 4 | `162.159.192.4:1701` | 0.00 | 12.41 |
+| 5 | `162.159.192.13:2408` | 0.00 | 12.52 |
+| 6 | `162.159.192.8:2408` | 0.00 | 12.57 |
+| 7 | `162.159.192.3:2408` | 0.00 | 12.59 |
+| 8 | `162.159.192.4:2408` | 33.33 | 12.61 |
+| 9 | `162.159.192.12:2408` | 0.00 | 12.87 |
+| 10 | `162.159.192.8:1701` | 33.33 | 12.90 |
 
 ## 🔗 WARP Configurations
 Use these pre-configured WARP setups for optimal performance. Each configuration is tested for reliability and speed.
@@ -31,7 +31,7 @@ Use these pre-configured WARP setups for optimal performance. Each configuration
 ### 1. Warp on Warp
 Combines two high-performance endpoints for enhanced stability.
 ```mupad
-warp://162.159.192.6:500/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#🇮🇷/?ifp=30-60&ifps=30-60&ifpd=4-8&ifpm=m4#🇮🇷 IP&&detour=warp://162.159.192.6:2408/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#🇮🇷/?ifp=50-100&ifps=30-60&ifpd=2-4&ifpm=m4#🇩🇪 IP
+warp://162.159.192.7:500/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#🇮🇷/?ifp=30-60&ifps=30-60&ifpd=4-8&ifpm=m4#🇮🇷 IP&&detour=warp://162.159.192.3:1701/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#🇮🇷/?ifp=50-100&ifps=30-60&ifpd=2-4&ifpm=m4#🇩🇪 IP
 ```
 
 ```mupad
@@ -46,26 +46,26 @@ warp://162.159.192.7:1701/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#🇮🇷
 ```
 
 ```mupad
-warp://162.159.192.11:500/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#🇮🇷
+warp://162.159.192.4:1701/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#🇮🇷
 ```
 
 ```mupad
-warp://162.159.192.14:1701/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#🇮🇷
+warp://162.159.192.13:2408/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#🇮🇷
 ```
 
 ```mupad
-warp://162.159.192.9:2408/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#🇮🇷
+warp://162.159.192.8:2408/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#🇮🇷
 ```
 
 
 ### 3. Warp-plus
 Advanced configurations for premium performance.
 ```mupad
-warp://162.159.192.13:500/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#🇮🇷&&detour=warp://162.159.192.2:2408/?ifp=50-100&ifps=30-60&ifpd=2-4&ifpm=m6#🇩🇪WoW
+warp://162.159.192.3:2408/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#🇮🇷&&detour=warp://162.159.192.4:2408/?ifp=50-100&ifps=30-60&ifpd=2-4&ifpm=m6#🇩🇪WoW
 ```
 
 ```mupad
-warp://162.159.192.13:500/?ifp=50-100&ifps=30-60&ifpd=2-4&ifpm=m3#🇮🇷&&detour=warp://162.159.192.2:2408/?ifp=50-100&ifps=30-60&ifpd=2-4&ifpm=m6#🇩🇪WoW
+warp://162.159.192.3:2408/?ifp=50-100&ifps=30-60&ifpd=2-4&ifpm=m3#🇮🇷&&detour=warp://162.159.192.4:2408/?ifp=50-100&ifps=30-60&ifpd=2-4&ifpm=m6#🇩🇪WoW
 ```
 
 
